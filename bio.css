@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #212121;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;       /* Stack the elements vertically */
+    justify-content: center;      /* Center the content vertically */
+    align-items: center;          /* Center the content horizontally */
+    padding: 20px;                /* Space around the header */
+    background-color: #ff4081;    /* Ensure this matches the main header color */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;            /* Ensure a good size for the heading */
+    color: white;
+    text-align: center;           /* Ensure h1 is centered */
+}
+
+/* Button Box Styling */
+.button-box {
+    display: flex;
+    justify-content: center;      /* Center the button horizontally */
+    align-items: center;          /* Center the button vertically (if needed) */
+    margin-top: 20px;             /* Add space between header and button box */
+}
+
+/* General Mojo Button Styling */
+.mojo-button {
+    display: inline-block;
+    padding: 10px 20px;           /* Consistent padding */
+    background-color: #ff5722;     /* Same background color */
+    color: white;                  /* Same text color */
+    border: none;                  /* Remove border */
+    border-radius: 5px;            /* Rounded corners */
+    cursor: pointer;               /* Pointer cursor on hover */
+    font-size: 1rem;               /* Same font size */
+    text-align: center;            /* Center the text */
+    text-decoration: none;         /* No underline for links */
+    transition: background-color 0.3s ease;  /* Smooth hover transition */
+}
+
+/* Hover Effect for All Mojo Buttons */
+.mojo-button:hover {
+    background-color: #e64a19;     /* Slightly darker background color on hover */
+}
+
+
+/* Life Stages Section */
+#life-stages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #0288d1;
+    border: 2px solid #00796b;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.stage-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.stage-box p {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    #life-stages {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
