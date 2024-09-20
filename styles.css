@@ -3,13 +3,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #212121;  
-    color: #ffffff;  
+    background-color: #212121;
+    color: #ffffff;
     min-height: 100vh;
 }
 
 header {
-    background-color: #ff4081; 
+    background-color: #ff4081;
     padding: 20px;
     text-align: center;
     color: white;
@@ -23,61 +23,67 @@ header h1 {
 }
 
 h1, #animate-btn, .profile-pic {
-    transition: color 1s ease, border-color 1s ease; /* Smooth transition for colors */
+    transition: color 1s ease, border-color 1s ease;
 }
 
 #about-me {
     display: flex;
-    align-items: center;  /* Center items vertically */
-    justify-content: space-between;  /* Distribute items evenly */
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #ff4081; 
+    background-color: #ff4081;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 1000px;
     border-radius: 10px;
 }
 
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 .profile-pic-box {
     width: 180px;
-    height: 180px; /* Ensures the box is a square */
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0288d1;  /* Blue background */
-    border-radius: 50%;  /* Make it a circle */
-    padding: 10px;  /* Add padding for space between the image and border */
+    background-color: #0288d1;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
 }
 
 .profile-pic {
-    transition: border-color 1s ease-in-out; /* Smooth transition of border color */
     border-radius: 50%;
     width: 100%;
     height: auto;
-    border: 5px solid transparent; /* Start with transparent border */
+    border: 5px solid transparent;
 }
 
 .text-box {
     flex: 1;
     text-align: left;
-    background-color: #388e3c;  
-    border: 2px solid #2e7d32;  
+    background-color: #388e3c;
+    border: 2px solid #2e7d32;
     padding: 20px;
     color: #ffffff;
-    max-width: 400px;  /* Limits the width of the text */
+    max-width: 400px;
 }
 
 .button-box {
     display: flex;
-    justify-content: center;  /* Center the button */
+    justify-content: center;
     align-items: center;
-    margin: 0 10px;
+    margin-top: 20px;
 }
 
 #animate-btn {
-    display: inline-block;
     padding: 10px 20px;
-    background-color: #ff5722;  
+    background-color: #ff5722;
     color: white;
     border: none;
     border-radius: 5px;
@@ -86,10 +92,9 @@ h1, #animate-btn, .profile-pic {
 }
 
 #animate-btn:hover {
-    background-color: #e64a19;  
+    background-color: #e64a19;
 }
 
-/* General Section Styling */
 section {
     margin: 20px auto;
     padding: 20px;
@@ -98,71 +103,31 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#class-reason {
-    background-color: #4caf50; 
-    border: 2px solid #388e3c;
-}
-
-#technologies {
-    background-color: #ff9800;  
-    border: 2px solid #e65100;
-}
-
-#resources {
-    background-color: #ff9800;  
-    border: 2px solid #e65100;
-}
-
-.xanadu, .etsy, .techno {
-    color: #0288d1;
-    text-decoration: none;
-}
-
-.xanadu:hover, .etsy:hover, .techno:hover {
-    color: #ff4081;  /* Change color on hover */
-    text-decoration: none;
-}
-
-#technologies h2, #resources h2, #class-reason h2 {
-    color: #ff4081; 
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 40px;
-    color: #ffffff;
-}
-
-ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-/* Mobile Adjustments */
 @media (max-width: 768px) {
     #about-me {
-        flex-direction: column;  /* Stack items vertically */
-        align-items: center;  /* Center items */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .profile-pic-box {
-        margin: 0 auto 20px;  /* Center profile pic */
-    }
-
-    .button-box {
-        justify-content: center;
-        margin-top: 20px;  /* Add margin above button */
+        margin: 0 auto 20px;
     }
 
     .text-box {
-        width: 100%;  /* Full width text on mobile */
-        text-align: center;  /* Center text */
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .button-box {
+        margin-top: 20px;
     }
 
     #animate-btn {
-        width: 100%;  /* Full width button */
+        width: 100%;
     }
 }
