@@ -24,8 +24,8 @@ header h1 {
 
 #about-me {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;  /* Center vertically */
+    justify-content: space-around;  /* Space around for better distribution */
     padding: 20px;
     background-color: #ff4081;  /* Pink box for the About Me section */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -67,13 +67,14 @@ header h1 {
     border: 2px solid #2e7d32;  /* Dark Green border */
     padding: 20px;
     color: #ffffff;
+    max-width: 400px;
 }
 
 .button-box {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20px;
+    margin-right: 20px;
 }
 
 #animate-btn {
@@ -84,6 +85,7 @@ header h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 #animate-btn:hover {
