@@ -3,13 +3,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #212121;  /* Dark background */
-    color: #ffffff;  /* White text color */
+    background-color: #212121;  
+    color: #ffffff;  
     min-height: 100vh;
 }
 
 header {
-    background-color: #ff4081; /* Vibrant Pink header */
+    background-color: #ff4081; 
     padding: 20px;
     text-align: center;
     color: white;
@@ -20,14 +20,20 @@ header h1 {
     font-size: 2.5rem;
     margin: 0;
     color: #ffffff;
+
 }
+
+h1, #animate-btn, .profile-pic {
+    transition: color 1s ease, border-color 1s ease; /* Smooth transition for colors */
+}
+
 
 #about-me {
     display: flex;
-    align-items: center;  /* Center vertically */
-    justify-content: space-around;  /* Space around for better distribution */
+    align-items: flex-start;
+    justify-content: flex-start;
     padding: 20px;
-    background-color: #ff4081;  /* Pink box for the About Me section */
+    background-color: #ff4081; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 1000px;
@@ -35,9 +41,9 @@ header h1 {
 }
 
 .box {
-    background-color: #0288d1;  /* Blue for internal boxes */
+    background-color: #0288d1;  
     padding: 20px;
-    border: 2px solid #00796b;  /* Darker Blue border */
+    border: 2px solid #00796b;  
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -45,54 +51,56 @@ header h1 {
 
 .profile-pic-box {
     width: 180px;
+    height: 180px; /* Ensures the box is a square */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    background-color: #1976d2;  /* Blue for profile pic box */
-    border-radius: 50%;
+    background-color: #0288d1;  /* Blue background */
+    border-radius: 50%;  /* Make it a circle */
+    padding: 10px;  /* Add padding for space between the image and border */
 }
 
 .profile-pic {
+    transition: border-color 1s ease-in-out; /* Smooth transition of border color */
     border-radius: 50%;
-    width: 150px;
+    width: 100%;
     height: auto;
-    border: 5px solid #d32f2f;  /* Red border around profile picture */
+    border: 5px solid transparent; /* Start with transparent border */
 }
+
+
 
 .text-box {
     flex: 1;
     text-align: left;
-    background-color: #388e3c;  /* Green for text box */
-    border: 2px solid #2e7d32;  /* Dark Green border */
+    background-color: #388e3c;  
+    border: 2px solid #2e7d32;  
     padding: 20px;
     color: #ffffff;
-    max-width: 400px;
 }
 
 .button-box {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 20px;
+    margin-top: 20px;
 }
 
 #animate-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff5722;  /* Orange button */
+    background-color: #ff5722;  
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 10px;
+    font-size: 1rem;
 }
 
 #animate-btn:hover {
-    background-color: #e64a19;  /* Darker Orange on hover */
+    background-color: #e64a19;  
 }
 
-/* General Section Styling */
 section {
     margin: 20px auto;
     padding: 20px;
@@ -101,49 +109,39 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
-    #about-me {
-        flex-direction: column; /* Stack boxes vertically */
-        align-items: center; /* Center align items */
-    }
 
-    .profile-pic-box {
-        margin: 0 auto 20px auto; /* Center profile pic box and add margin */
-    }
-
-    .text-box, .button-box {
-        width: 100%; /* Full width for the text and button on mobile */
-        text-align: center; /* Center the text on mobile */
-    }
-
-    #animate-btn {
-        width: 100%; /* Full width button on mobile */
-        text-align: center;
-        padding: 15px 20px; /* Increase padding for better clickability */
-    }
-}
-
-/* Class Reason - Green */
 #class-reason {
-    background-color: #4caf50;  /* Green */
+    background-color: #4caf50; 
     border: 2px solid #388e3c;
 }
 
-/* Technologies - Orange */
+
 #technologies {
-    background-color: #ff9800;  /* Orange */
+    background-color: #ff9800;  
     border: 2px solid #e65100;
 }
 
-/* Resources - Blue */
+
 #resources {
-    background-color: #42a5f5;  /* Blue */
-    border: 2px solid #1976d2;
+    background-color: #ff9800;  
+    border: 2px solid #e65100;
 }
 
+.xanadu, .etsy, .techno {
+    color: #0288d1;
+    text-decoration: none;
+}
+
+.xanadu:hover, .etsy:hover, .techno:hover {
+    color: #ff4081;  /* Change color on hover */
+    text-decoration: none;
+}
+
+
+
+
 #technologies h2, #resources h2, #class-reason h2 {
-    color: #ff4081;  /* Pink for section headings */
+    color: #ff4081; 
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
@@ -152,7 +150,7 @@ section {
 ul {
     list-style-type: disc;
     margin-left: 40px;
-    color: #ffffff;  /* White text for the list */
+    color: #ffffff;
 }
 
 ul li {
@@ -160,17 +158,20 @@ ul li {
     font-size: 1.1rem;
 }
 
-.w3schools-link, .mdn-link {
-    color: #0288d1;  /* Blue links */
-    text-decoration: none;
-}
 
-.w3schools-link:hover, .mdn-link:hover {
-    color: #ff4081;  /* Pink hover effect for links */
-}
+
+
 
 @media (max-width: 768px) {
-    ul {
-        margin-left: 20px;
+    #about-me {
+        flex-direction: column;
+    }
+
+    .profile-pic-box {
+        margin: 0 auto 20px;
+    }
+
+    .button-box {
+        justify-content: center;
     }
 }
