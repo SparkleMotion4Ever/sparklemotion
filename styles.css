@@ -1,56 +1,58 @@
-/* Adjusted Profile Container */
-.profile-container {
+/* Container for the About Me section */
+#about-me {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;  /* Stack the profile picture and button */
-    text-align: center;
+    align-items: center;  /* Align items vertically in the center */
+    justify-content: space-between;  /* Space out the elements evenly */
+    padding: 20px;
+    background-color: #ff4081;  /* Pink background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
 }
 
-/* Adjustments for the MOJO button */
+/* MOJO button alignment */
 .button-box {
-    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;  /* Add space between the button and profile picture */
+}
+
+/* Profile Picture alignment */
+.profile-pic-box {
+    width: 200px;  /* Adjust the width */
+    height: 200px;  /* Adjust the height */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    background-color: #0288d1;  /* Blue background */
+    border-radius: 50%;
+    margin-right: 20px;  /* Add space between profile pic and text */
 }
 
-/* Adding space between the profile picture and text-box */
+/* Blurb text-box */
 .text-box {
-    flex: 1;
+    flex: 1;  /* Allow the text box to take up the remaining space */
     text-align: left;
-    background-color: #388e3c;
-    border: 2px solid #2e7d32;
+    background-color: #388e3c;  /* Green background */
+    border: 2px solid #2e7d32;  /* Dark green border */
     padding: 20px;
     color: #ffffff;
-    width: 300px;  /* Adjust width for better alignment */
-    margin-left: 30px;  /* Increased margin for spacing */
 }
 
-/* Adding more space between sections */
-section {
-    margin: 40px auto;  /* Increased margin to create more separation */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive adjustments for mobile */
+/* Responsive layout for mobile */
 @media (max-width: 768px) {
     #about-me {
-        flex-direction: column;  /* Stack items vertically on mobile */
+        flex-direction: column;
         text-align: center;
     }
 
-    .text-box {
-        margin-left: 0;  /* Remove the left margin on mobile for centering */
-        width: 100%;
-        text-align: center;  /* Center the text on mobile */
+    .profile-pic-box, .button-box, .text-box {
+        margin: 10px 0;
     }
 
-    .profile-container {
-        align-items: center;
+    .text-box {
+        width: 100%;  /* Full width text on mobile */
     }
 }
