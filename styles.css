@@ -1,69 +1,22 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #212121;
-    color: #ffffff;
-    min-height: 100vh;
-}
-
-header {
-    background-color: #ff4081;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    color: #ffffff;
-}
-
-h1, #animate-btn, .profile-pic {
-    transition: color 1s ease, border-color 1s ease;
-}
-
-#about-me {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #ff4081;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 1000px;
-    border-radius: 10px;
-}
-
+/* Adjusted Profile Container */
 .profile-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;  /* Stack the profile picture and button */
+    text-align: center;
 }
 
-.profile-pic-box {
-    width: 180px;
-    height: 180px;
+/* Adjustments for the MOJO button */
+.button-box {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0288d1;
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    width: 100%;
-    height: auto;
-    border: 5px solid transparent;
-}
-
+/* Adding space between the profile picture and text-box */
 .text-box {
     flex: 1;
     text-align: left;
@@ -71,63 +24,33 @@ h1, #animate-btn, .profile-pic {
     border: 2px solid #2e7d32;
     padding: 20px;
     color: #ffffff;
-    max-width: 400px;
+    width: 300px;  /* Adjust width for better alignment */
+    margin-left: 30px;  /* Increased margin for spacing */
 }
 
-.button-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#animate-btn {
-    padding: 10px 20px;
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-#animate-btn:hover {
-    background-color: #e64a19;
-}
-
+/* Adding more space between sections */
 section {
-    margin: 20px auto;
+    margin: 40px auto;  /* Increased margin to create more separation */
     padding: 20px;
     border-radius: 10px;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     #about-me {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-pic-box {
-        margin: 0 auto 20px;
+        flex-direction: column;  /* Stack items vertically on mobile */
+        text-align: center;
     }
 
     .text-box {
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .button-box {
-        margin-top: 20px;
-    }
-
-    #animate-btn {
+        margin-left: 0;  /* Remove the left margin on mobile for centering */
         width: 100%;
+        text-align: center;  /* Center the text on mobile */
+    }
+
+    .profile-container {
+        align-items: center;
     }
 }
