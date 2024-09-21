@@ -1,177 +1,60 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #212121;  
-    color: #ffffff;  
-    min-height: 100vh;
-}
-
-header {
-    background-color: #ff4081; 
-    padding: 20px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    color: #ffffff;
-
-}
-
-h1, #animate-btn, .profile-pic {
-    transition: color 1s ease, border-color 1s ease; /* Smooth transition for colors */
-}
-
-
+/* About Me Section Styling */
 #about-me {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;  /* Align items vertically in the center */
+    justify-content: space-around;  /* Space out the elements evenly */
     padding: 20px;
-    background-color: #ff4081; 
+    background-color: #ff4081;  /* Pink background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 1000px;
     border-radius: 10px;
 }
 
-.box {
-    background-color: #0288d1;  
-    padding: 20px;
-    border: 2px solid #00796b;  
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+/* MOJO button alignment */
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;  /* Add space between the button and profile picture */
+    width: 100px;  /* Fixed width for the button */
 }
 
+/* Profile Picture alignment */
 .profile-pic-box {
-    width: 180px;
-    height: 180px; /* Ensures the box is a square */
+    width: 200px;  /* Adjust the width */
+    height: 200px;  /* Adjust the height */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0288d1;  /* Blue background */
-    border-radius: 50%;  /* Make it a circle */
-    padding: 10px;  /* Add padding for space between the image and border */
-}
-
-.profile-pic {
-    transition: border-color 1s ease-in-out; /* Smooth transition of border color */
     border-radius: 50%;
-    width: 100%;
-    height: auto;
-    border: 5px solid transparent; /* Start with transparent border */
+    margin-right: 20px;  /* Add space between profile pic and text */
 }
 
-
-
+/* Blurb text-box */
 .text-box {
-    flex: 1;
+    flex: 1;  /* Allow the text box to take up the remaining space */
     text-align: left;
-    background-color: #388e3c;  
-    border: 2px solid #2e7d32;  
+    background-color: #388e3c;  /* Green background */
+    border: 2px solid #2e7d32;  /* Dark green border */
     padding: 20px;
     color: #ffffff;
+    margin-left: 20px;  /* Add margin to the left to create space from the profile picture */
 }
 
-.button-box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#animate-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff5722;  
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-#animate-btn:hover {
-    background-color: #e64a19;  
-}
-
-section {
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-#class-reason {
-    background-color: #4caf50; 
-    border: 2px solid #388e3c;
-}
-
-
-#technologies {
-    background-color: #ff9800;  
-    border: 2px solid #e65100;
-}
-
-
-#resources {
-    background-color: #ff9800;  
-    border: 2px solid #e65100;
-}
-
-.xanadu, .etsy, .techno {
-    color: #0288d1;
-    text-decoration: none;
-}
-
-.xanadu:hover, .etsy:hover, .techno:hover {
-    color: #ff4081;  /* Change color on hover */
-    text-decoration: none;
-}
-
-
-
-
-#technologies h2, #resources h2, #class-reason h2 {
-    color: #ff4081; 
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 40px;
-    color: #ffffff;
-}
-
-ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-
-
-
-
+/* Responsive layout for mobile */
 @media (max-width: 768px) {
     #about-me {
         flex-direction: column;
+        text-align: center;
     }
 
-    .profile-pic-box {
-        margin: 0 auto 20px;
+    .profile-pic-box, .button-box, .text-box {
+        margin: 10px 0;
     }
 
-    .button-box {
-        justify-content: center;
+    .text-box {
+        width: 100%;  /* Full width text on mobile */
     }
 }
