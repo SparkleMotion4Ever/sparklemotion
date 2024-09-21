@@ -1,15 +1,28 @@
+/* About Me Section Styling */
+#about-me {
+    display: flex;
+    align-items: center;  /* Align items vertically in the center */
+    justify-content: space-between;  /* Space out the elements evenly */
+    padding: 20px;
+    background-color: #ff4081;  /* Pink background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
 /* MOJO button alignment */
 .button-box {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 20px;  /* Adjust the margin */
+    margin-right: 20px;  /* Add space between the button and profile picture */
     width: 100px;  /* Fixed width for the button */
 }
 
 /* Profile Picture alignment */
 .profile-pic-box {
-    width: 150px;  /* Adjust the width to balance the layout */
+    width: 150px;  /* Adjust the width */
     height: 150px;  /* Adjust the height */
     display: flex;
     justify-content: center;
@@ -30,7 +43,7 @@
     margin-left: 20px;  /* Add margin to the left to create space from the profile picture */
 }
 
-/* Adjust for responsive layout */
+/* Responsive layout for mobile */
 @media (max-width: 768px) {
     #about-me {
         flex-direction: column;
