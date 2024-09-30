@@ -160,15 +160,31 @@ header h1 {
         flex-direction: column;
     }
 
+    .profile-pic-box
+/* Responsive Layout for Mobile */
+@media (max-width: 768px) {
+    #about-me {
+        flex-direction: column;
+    }
+
     .profile-pic-box, .button-box, .text-box {
         margin: 10px 0;
     }
 
     .text-box {
-        width: 100%;
+        width: 100%;  /* Full width text on mobile */
     }
 
-    #resources ul li {
-        text-align: center;
+    .profile-pic-box {
+        width: 100%;  /* Full width for profile picture box */
+    }
+
+    .profile-pic {
+        width: 80%;  /* Make the profile picture smaller on mobile */
+    }
+
+    #footer {
+        font-size: 0.9rem;
+        padding: 15px;
     }
 }
