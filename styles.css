@@ -1,83 +1,101 @@
-/* About Me Section Styling */
+/* Body and General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;  /* Dark background */
+    color: #ffffff;  /* White text color */
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ff4081; /* Vibrant Pink header */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* About Me Section */
 #about-me {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #ff4081; /* Pink background */
+    background-color: #ff4081;  /* Pink box for the About Me section */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 1000px;
     border-radius: 10px;
-    position: relative;
 }
 
-/* MOJO button alignment */
-.button-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    width: 100px;
-    height: 50px;
+.box {
+    background-color: #0288d1;  /* Blue for internal boxes */
+    padding: 20px;
+    border: 2px solid #00796b;  /* Darker Blue border */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
-/* Profile Picture alignment */
 .profile-pic-box {
-    width: 200px;
-    height: 200px;
+    width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0288d1; /* Blue background */
-    border-radius: 50%;
     margin-right: 20px;
+    background-color: #1976d2;  /* Blue for profile pic box */
+    border-radius: 50%;
 }
 
-/* Profile picture itself */
 .profile-pic {
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    border: 5px solid #d32f2f; /* Red border */
+    width: 150px;
+    height: auto;
+    border: 5px solid #d32f2f;  /* Red border around profile picture */
 }
 
-/* Text Box alignment */
 .text-box {
     flex: 1;
     text-align: left;
-    background-color: #388e3c; /* Green background */
-    border: 2px solid #2e7d32;
+    background-color: #388e3c;  /* Green for text box */
+    border: 2px solid #2e7d32;  /* Dark Green border */
     padding: 20px;
     color: #ffffff;
-    margin-left: 20px;
 }
 
-/* Footer Styling */
-#footer {
-    background-color: #0288d1; /* Blue background */
-    color: #ffffff; /* White text */
+.button-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#animate-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;  /* Orange button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#animate-btn:hover {
+    background-color: #e64a19;  /* Darker Orange on hover */
+}
+
+/* Technologies and Resources Sections */
+#technologies, #resources {
+    background-color: #42a5f5; /* Light blue background */
+    border: 2px solid #1976d2; /* Darker blue border */
     padding: 20px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsive layout for mobile */
-@media (max-width: 768px) {
-    #about-me {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-pic-box,
-    .button-box,
-    .text-box {
-        margin: 10px 0;
-    }
-
-    .text-box {
-        width: 100%; /* Full width text on mobile */
-    }
-}
+    margin: 20px auto;
+    border-radius
