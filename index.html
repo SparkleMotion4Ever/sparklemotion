@@ -7,6 +7,7 @@
     <title>Web Development Class</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
@@ -16,7 +17,7 @@
 
     <section id="about-me">
         <h2></h2> 
-        <div class="box button-box">
+        <div class="box button-box"></div>
             <button id="animate-btn">MOJO</button>
         </div>
         <div class="box profile-pic-box">
@@ -24,9 +25,12 @@
         </div>
     
         <div class="box text-box">
-            <p>Špå®kłé Mötîøñ is an amateur coder, bad artist, and DJ with a passion for breaking the rules in all forms of creative expression...</p>
+            <p>Špå®kłé Mötîøñ is an amateur coder, bad artist, and DJ with a passion for breaking the rules in all forms of creative expression. With his unorthodox energy and eclectic vibe, Sparkle Motion thrives on pushing the boundaries of what’s considered "good," reveling in imperfection to create something entirely unique. His art and music are a testament to the power of raw creativity, where chaos and experimentation meet to form an unconventional, but captivating experience. Sparkle Motion invites everyone to "Live The Fantasee" in a world where flaws are celebrated and originality reigns supreme, proving that true innovation often comes from embracing the unexpected.</p>
         </div>
+    
+        
     </section>
+    
     
     <section id="class-reason">
         <h2></h2>
@@ -40,21 +44,15 @@
     <section id="resources">
         <h2>Links</h2>
         <ul>
-            <li><a href="https://soundcloud.com/sparklemotionisinthehouse/sets/x-n-du" target="_blank" class="xanadu">X@N@DU</a></li>
-            <li><a href="https://soundcloud.com/sparklemotionisinthehouse/sets/t3chno-jams" target="_blank" class="techno">T3CHNØ JAMS</a></li>
-            <li><a href="https://www.etsy.com/shop/SparkleMotionMerch?ref=seller-platform-mcnav" target="_blank" class="etsy">Etsy</a></li>
+            <li><a href="https://soundcloud.com/sparklemotionisinthehouse/sets/x-n-du" target="_blank" class="xanadu">X@N@DU</a> - The music of X@N@DU is a nostalgic pulse, blending timeless disco, synthpop, and club anthems. Retro beats and soulful lyrics create a dreamscape that keeps the past alive in the city's vibrant rhythm.</li>
+            <li><a href="https://soundcloud.com/sparklemotionisinthehouse/sets/t3chno-jams" target="_blank" class="techno">T3CHNØ JAMS</a> - T3CHNØ JAMS pulses with global rhythms, blending an eclectic mix of beats from around the world. Its driving energy and futuristic edge create a soundscape that unites listeners across borders in a shared, electrifying beat.</li>
+
+            <li><a href="https://www.etsy.com/shop/SparkleMotionMerch?ref=seller-platform-mcnav" target="_blank" class="etsy">Etsy</a> - Špå®kłé Mötîøñ Merch!</li>
         </ul>
     </section>
-
-    <!-- Footer Section -->
-    <footer id="footer">
-        <p>&copy; 2024 Sparkle Motion | All Rights Reserved</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-            <a href="https://www.twitter.com" target="_blank">Twitter</a> |
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        </div>
-    </footer>
+    
+    
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -65,22 +63,69 @@
                 $('h1').animate({ fontSize: '4rem' }, 1000)
                     .animate({ fontSize: '2.5rem' }, 1000);
     
-                // Color changes for the header and profile picture border
-                $('h1').css('color', 'pink');
-                setTimeout(function() { $('h1').css('color', 'blue'); }, 1000);
-                setTimeout(function() { $('h1').css('color', 'green'); }, 2000);
-                setTimeout(function() { $('h1').css('color', 'orange'); }, 3000);
-                setTimeout(function() { $('h1').css('color', 'white'); }, 4000);
-
-                // Profile picture border color animation
+                // Use setTimeout to control the color changes of h1
+                $('h1').css('color', 'pink'); // Start with pink
+    
+                setTimeout(function() {
+                    $('h1').css('color', 'blue'); // Change to blue after 1 second
+                }, 1000);
+    
+                setTimeout(function() {
+                    $('h1').css('color', 'green'); // Change to green after 2 seconds
+                }, 2000);
+    
+                setTimeout(function() {
+                    $('h1').css('color', 'orange'); // Change to orange after 3 seconds
+                }, 3000);
+    
+                setTimeout(function() {
+                    $('h1').css('color', 'white');  // Reset to white after 4 seconds
+                }, 4000);
+    
+                // Profile picture border color changes
                 $('.profile-pic').css('border-color', 'pink');
-                setTimeout(function() { $('.profile-pic').css('border-color', 'blue'); }, 1000);
-                setTimeout(function() { $('.profile-pic').css('border-color', 'green'); }, 2000);
-                setTimeout(function() { $('.profile-pic').css('border-color', 'orange'); }, 3000);
-                setTimeout(function() { $('.profile-pic').css('border-color', 'transparent'); }, 4000);
+    
+                setTimeout(function() {
+                    $('.profile-pic').css('border-color', 'blue');
+                }, 1000);
+    
+                setTimeout(function() {
+                    $('.profile-pic').css('border-color', 'green');
+                }, 2000);
+    
+                setTimeout(function() {
+                    $('.profile-pic').css('border-color', 'orange');
+                }, 3000);
+    
+                setTimeout(function() {
+                    $('.profile-pic').css('border-color', 'transparent'); // Reset after 4 seconds
+                }, 4000);
+    
+                // Button text color changes
+                $('#animate-btn').css('color', 'pink');
+    
+                setTimeout(function() {
+                    $('#animate-btn').css('color', 'blue');
+                }, 1000);
+    
+                setTimeout(function() {
+                    $('#animate-btn').css('color', 'green');
+                }, 2000);
+    
+                setTimeout(function() {
+                    $('#animate-btn').css('color', 'orange');
+                }, 3000);
+    
+                setTimeout(function() {
+                    $('#animate-btn').css('color', 'white');  // Reset after 4 seconds
+                }, 4000);
             });
         });
     </script>
+    
+    
+    
+    
 
 </body>
 </html>
