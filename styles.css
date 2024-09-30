@@ -29,7 +29,7 @@ header h1 {
     align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
-    background-color: #ff4081;  /* Pink box for the About Me section */
+    background-color: #ff4081;  /* Pink background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 1000px;
@@ -37,11 +37,6 @@ header h1 {
 }
 
 .box {
-    background-color: #0288d1;  /* Blue for internal boxes */
-    padding: 20px;
-    border: 2px solid #00796b;  /* Darker Blue border */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
 }
 
@@ -50,8 +45,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    background-color: #1976d2;  /* Blue for profile pic box */
+    background-color: #1976d2;  /* Blue background */
     border-radius: 50%;
 }
 
@@ -65,7 +59,7 @@ header h1 {
 .text-box {
     flex: 1;
     text-align: left;
-    background-color: #388e3c;  /* Green for text box */
+    background-color: #388e3c;  /* Green background */
     border: 2px solid #2e7d32;  /* Dark Green border */
     padding: 20px;
     color: #ffffff;
@@ -79,7 +73,6 @@ header h1 {
 }
 
 #animate-btn {
-    display: inline-block;
     padding: 10px 20px;
     background-color: #ff5722;  /* Orange button */
     color: white;
@@ -95,4 +88,66 @@ header h1 {
 /* Technologies and Resources Sections */
 #technologies, #resources {
     background-color: #42a5f5; /* Light blue background */
-    border: 2px solid #197
+    border: 2px solid #1976d2; /* Darker blue border */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    text-align: center;
+    color: white;
+}
+
+#technologies h2, #resources h2 {
+    color: #ff4081; /* Pink heading color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* List item styling for links */
+#resources ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#resources ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+#resources ul li a {
+    color: #0288d1; /* Light blue link color */
+    text-decoration: none;
+}
+
+#resources ul li a:hover {
+    color: #ff4081; /* Change to pink on hover */
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #0288d1; /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    #about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic-box,
+    .button-box,
+    .text-box {
+        margin: 10px 0;
+    }
+
+    .text-box {
+        width: 100%; /* Full width text on mobile */
+    }
+}
