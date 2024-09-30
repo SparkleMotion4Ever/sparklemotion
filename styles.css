@@ -1,11 +1,11 @@
-/* Body and General Styles */
+/* General Body and Layout */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #212121;  /* Dark background */
-    color: #ffffff;  /* White text color */
+    background-color: #212121; /* Dark background */
+    color: #ffffff; /* White text color */
     min-height: 100vh;
 }
 
@@ -105,49 +105,4 @@ header h1 {
 }
 
 /* List item styling for links */
-#resources ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#resources ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    text-align: left;
-}
-
-#resources ul li a {
-    color: #0288d1; /* Light blue link color */
-    text-decoration: none;
-}
-
-#resources ul li a:hover {
-    color: #ff4081; /* Change to pink on hover */
-}
-
-/* Footer Styling */
-#footer {
-    background-color: #0288d1; /* Blue background */
-    color: #ffffff; /* White text */
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-/* Responsive layout for mobile */
-@media (max-width: 768px) {
-    #about-me {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-pic-box,
-    .button-box,
-    .text-box {
-        margin: 10px 0;
-    }
-
-    .text-box {
-        width: 100%; /* Full width text on mobile */
-    }
-}
+#resources
