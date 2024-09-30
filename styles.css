@@ -104,6 +104,15 @@ header h1 {
 #footer .social-icons a:hover {
     color: #ff4081;
 }
+#footer {
+    background-color: #0288d1; /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
