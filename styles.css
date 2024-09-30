@@ -125,22 +125,23 @@ header h1 {
     color: #ff4081; /* Change to pink on hover */
 }
 
-/* Footer Styling */
+/* Footer */
 #footer {
-    background-color: #1976d2; /* Dark blue background */
+    background-color: #1976d2; /* Blue background */
+    color: white;
     padding: 20px;
     text-align: center;
-    color: white;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 1.1rem;
 }
 
 #footer a {
-    color: #ff4081; /* Pink for links in the footer */
+    color: #ff4081; /* Pink links */
     text-decoration: none;
 }
 
 #footer a:hover {
-    color: #ffffff; /* Change to white on hover */
+    color: #ff5722; /* Orange on hover */
 }
 
 /* Animation for Emoji */
@@ -154,13 +155,6 @@ header h1 {
     transform: scale(2); /* Scale to twice the size */
 }
 
-/* Responsive Layout for Mobile */
-@media (max-width: 768px) {
-    #about-me {
-        flex-direction: column;
-    }
-
-    .profile-pic-box
 /* Responsive Layout for Mobile */
 @media (max-width: 768px) {
     #about-me {
