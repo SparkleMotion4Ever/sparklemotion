@@ -105,4 +105,70 @@ header h1 {
 }
 
 /* List item styling for links */
-#resources
+#resources ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#resources ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+#resources ul li a {
+    color: #0288d1; /* Light blue link color */
+    text-decoration: none;
+}
+
+#resources ul li a:hover {
+    color: #ff4081; /* Change to pink on hover */
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #1976d2; /* Dark blue background */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+#footer a {
+    color: #ff4081; /* Pink for links in the footer */
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #ffffff; /* Change to white on hover */
+}
+
+/* Animation for Emoji */
+#emoji {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#emoji.clicked {
+    transform: scale(2); /* Scale to twice the size */
+}
+
+/* Responsive Layout for Mobile */
+@media (max-width: 768px) {
+    #about-me {
+        flex-direction: column;
+    }
+
+    .profile-pic-box, .button-box, .text-box {
+        margin: 10px 0;
+    }
+
+    .text-box {
+        width: 100%;
+    }
+
+    #resources ul li {
+        text-align: center;
+    }
+}
