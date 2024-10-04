@@ -25,7 +25,11 @@
             <p>Špå®kłé Mötîøñ is an amateur coder, bad artist, and DJ with a passion for breaking the rules in all forms of creative expression. With his unorthodox energy and eclectic vibe, Sparkle Motion thrives on pushing the boundaries of what’s considered "good," reveling in imperfection to create something entirely unique. His art and music are a testament to the power of raw creativity, where chaos and experimentation meet to form an unconventional, but captivating experience. Sparkle Motion invites everyone to "Live The Fantasee" in a world where flaws are celebrated and originality reigns supreme.</p>
         </div>
     </section>
-    <section id="bio"><h2><ul><li><a href="bio.html" target="_blank" class="bio">Bio</a></li></ul></section>
+
+    <!-- Corrected Bio Section -->
+    <section id="technologies">
+        <h2><a href="bio.html" target="_blank" class="bio">Bio</a></h2>
+    </section>
         
     <section id="resources">
         <h2>Links</h2>
@@ -41,17 +45,14 @@
             </li>
         </ul>
     </section>
-    <section id="bio"><a href="https://sparklemotion4ever.github.io/sparklemotion/bio.html" target="_blank" class="bio">Bio</a></section>
-        
     
-
 <footer id="footer">
     <p>&copy; 2024 Špå®kłé Mötîøñ. All rights reserved.</p>
     <p>
         Support my projects on 
         <a href="https://www.gofundme.com/your-campaign-link" target="_blank" style="color: #ff4081; text-decoration: none;">
             GoFundMe
-        </a>.
+        </a> by <span id="emoji">💩</span>.
     </p>
 </footer>
 
@@ -122,8 +123,13 @@
                     $('#animate-btn').css('color', 'white');  // Reset after 4 seconds
                 }, 4000);
             });
+
+            // Emoji Animation
+            $('#emoji').click(function() {
+                $(this).toggleClass('clicked');
+            });
         });
     </script>
-    
+
 </body>
 </html>

@@ -87,7 +87,8 @@ header h1 {
 
 /* Technologies and Resources Sections */
 /* Update for Bio and Links Section */
-#technologies {
+/* Technologies and Resources Sections */
+#technologies, #resources {
     background-color: #42a5f5; /* Light blue background */
     border: 2px solid #1976d2; /* Darker blue border */
     padding: 20px;
@@ -99,44 +100,13 @@ header h1 {
     color: white;
 }
 
-#technologies h2 {
+#technologies h2, #resources h2 {
     color: #ff4081; /* Pink heading color */
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Ensure the Bio link is spaced properly */
-#technologies h2 a {
-    color: #ff4081; /* Pink link color */
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-#technologies h2 a:hover {
-    color: #ffffff; /* Hover effect */
-}
-
-/* Adjust for proper alignment and margin */
-#technologies {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Ensure alignment */
-    justify-content: center;
-}
-
-/* Ensure Links and Resources Section is also aligned correctly */
-#resources {
-    background-color: #42a5f5; /* Light blue background */
-    border: 2px solid #1976d2; /* Darker blue border */
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
-    text-align: center;
-    color: white;
-}
-
+/* Links inside Resources */
 #resources ul {
     list-style-type: none;
     padding-left: 0;
