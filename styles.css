@@ -108,28 +108,28 @@ header h1 {
 
 /* Links inside Resources */
 /* Style links in the resources section as buttons */
+/* Style links in the resources section as buttons */
 #resources ul li a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff4081; /* Pink background for buttons */
-    color: #ffffff; /* White text */
+    background-color: #ff4081; /* Pink button background */
+    color: #ffffff; /* White text color */
     border-radius: 5px;
     text-align: center;
     text-decoration: none; /* Remove underline */
-    margin-bottom: 10px; /* Space between buttons */
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #resources ul li a:hover {
     background-color: #e91e63; /* Darker pink on hover */
-    color: #ffffff; /* Ensure text stays white on hover */
-    text-decoration: none; /* Keep no underline on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover for effect */
 }
 
-/* Optional: Space between the text and buttons */
+/* Optional: Space between list items */
 #resources ul li {
-    margin-bottom: 15px; /* Adjust the spacing between each list item if needed */
+    margin-bottom: 15px; /* Adds spacing between the buttons */
 }
 
 
