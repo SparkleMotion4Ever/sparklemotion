@@ -107,25 +107,31 @@ header h1 {
 }
 
 /* Links inside Resources */
-#resources ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#resources ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    text-align: left;
-}
-
+/* Style links in the resources section as buttons */
 #resources ul li a {
-    color: #0288d1; /* Light blue link color */
-    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4081; /* Pink background for buttons */
+    color: #ffffff; /* White text */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    margin-bottom: 10px; /* Space between buttons */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 #resources ul li a:hover {
-    color: #ff4081; /* Change to pink on hover */
+    background-color: #e91e63; /* Darker pink on hover */
+    color: #ffffff; /* Ensure text stays white on hover */
+    text-decoration: none; /* Keep no underline on hover */
 }
+
+/* Optional: Space between the text and buttons */
+#resources ul li {
+    margin-bottom: 15px; /* Adjust the spacing between each list item if needed */
+}
+
 
 
 /* Footer */
