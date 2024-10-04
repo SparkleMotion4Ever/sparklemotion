@@ -86,7 +86,8 @@ header h1 {
 }
 
 /* Technologies and Resources Sections */
-#technologies, #resources {
+/* Update for Bio and Links Section */
+#technologies {
     background-color: #42a5f5; /* Light blue background */
     border: 2px solid #1976d2; /* Darker blue border */
     padding: 20px;
@@ -98,13 +99,44 @@ header h1 {
     color: white;
 }
 
-#technologies h2, #resources h2 {
+#technologies h2 {
     color: #ff4081; /* Pink heading color */
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* List item styling for links */
+/* Ensure the Bio link is spaced properly */
+#technologies h2 a {
+    color: #ff4081; /* Pink link color */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#technologies h2 a:hover {
+    color: #ffffff; /* Hover effect */
+}
+
+/* Adjust for proper alignment and margin */
+#technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensure alignment */
+    justify-content: center;
+}
+
+/* Ensure Links and Resources Section is also aligned correctly */
+#resources {
+    background-color: #42a5f5; /* Light blue background */
+    border: 2px solid #1976d2; /* Darker blue border */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    text-align: center;
+    color: white;
+}
+
 #resources ul {
     list-style-type: none;
     padding-left: 0;
@@ -124,6 +156,7 @@ header h1 {
 #resources ul li a:hover {
     color: #ff4081; /* Change to pink on hover */
 }
+
 
 /* Footer */
 #footer {
@@ -145,6 +178,7 @@ header h1 {
 }
 
 /* Animation for Emoji */
+/* Animation for Emoji */
 #emoji {
     font-size: 2rem;
     cursor: pointer;
@@ -154,6 +188,7 @@ header h1 {
 #emoji.clicked {
     transform: scale(2); /* Scale to twice the size */
 }
+
 
 /* Responsive Layout for Mobile */
 @media (max-width: 768px) {
@@ -182,3 +217,5 @@ header h1 {
         padding: 15px;
     }
 }
+/* Animation for Emoji */
+
